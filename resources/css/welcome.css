@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  height: 100vh;
+  background: url('/resources/images/1000006456-NiEWqrRAp-transformed.jpeg') no-repeat center center;
+  background-size: cover;
+  font-family: Lato, Arial, sans-serif;
+}
+
+.top-container {
+  background-color: #4C6444;
+  padding: 1.6vh 0.8vw 1.6vh 1.4vw;
+  border-radius: 0.6vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 20vh;
+  right: 24.3vw;
+}
+
+.top-container .header {
+  color: ghostwhite;
+  text-shadow: -0.2vw 0.2vh black;
+  font-size: 4.4vh;
+  font-weight: 500;
+}
+
+.top-container .sfhs-student-term {
+  background-color: #CABA9C;
+  color: darkgreen;
+  font-size: 5vh;
+  font-weight: 600;
+  text-shadow: -0.2vw 0.2vh #133A1B;
+  box-shadow: black -0.4vw 0.8vh;
+  padding: 0vh 1vw;
+  border-radius: 0.4vw;
+  margin-left: 1vw;
+}
+
+.middle-container { 
+  background: #102820;
+  padding: 1vw;
+  border-radius: 0.8vw;
+  display: inline-block;
+  position: absolute;
+  top: 31vh;
+  left: 22vw;
+}
+
+.middle-container .top-message {
+  margin: 1vh 0 2vh 0vw;
+  display: flex;
+  align-items: center;
+}
+
+.middle-container .top-message .sfhs-logo {
+  height: 8vh;
+  margin-left: 0.4vw;
+  margin-bottom: 1vh;
+}
+
+.middle-container .top-message .divider-text {
+  font-size: 5vh;
+  font-weight: 300;
+  margin-left: 7vw;
+  margin-right: 1.8vw;
+}
+
+.middle-container .top-message > span {
+  color: white;
+  font-size: 3vh;
+  font-weight: 300;
+  text-shadow: -0.1vw 0.1vh black;
+}
+
+.middle-container .school-name {
+  color: #CABA9C;
+  font-size: 3.4vh;
+  font-weight: 600;
+  text-shadow: -0.2vw 0.1vh darkgreen;
+  margin-left: 0.2vw;
+}
+
+.middle-container .quote-container {
+  height: 22vh;
+  background-color: white;
+  margin-top: 1.2vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.middle-container .quote-container .quote-message-container {
+  margin: 4vh 1vw 2vh 1vw;
+}
+
+.middle-container .quote-container .quote-message-container > span {
+  text-align: center;
+  font-size: 3.2vh;
+  font-weight: 600;
+}
+
+.middle-container .quote-container .quote-message-container .quotation-mark {
+  height: 4vh;
+  margin-right: 1vw;
+}
+
+.middle-container .quote-container .quote-author {
+  text-align: right;
+  font-size: 2.6vh;
+  font-weight: 500;
+  margin-right: 0.6vw;
+  margin-bottom: 1vh;
+}
+
+.bottom-container {
+  height: 8vh;
+  background: #8A6240;
+  padding: 0.6vh 1vw;
+  border-radius: 0.6vw;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 72vh;
+  left: 22vw;
+}
+
+.bottom-container .direction-message {
+  color: white; 
+  font-size: 2.8vh;
+  font-weight: 500;
+  margin-right: 1vw;
+}
+
+.bottom-container .home-button {
+  background: #4C6444;
+  padding: 0.6vh 1vw;
+  border: none;
+  border-radius: 0.6vw;
+  box-shadow: black -0.4vw 1vh;
+}
+
+.bottom-container .home-button > a {
+  color: ghostwhite;
+  font-size: 3vh;
+  font-weight: 700;
+  text-shadow: -0.1vw 0 white;
+}

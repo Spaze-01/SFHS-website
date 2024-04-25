@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.nav-bar {
+  height: 100px;
+  display: flex;
+}
+
+.a {
+  background-color: lightpink;
+  width: 100px;
+}
+
+.b {
+  background-color: lightblue;
+  flex: 2;
+}
+
+.c {
+  background: lightpink;
+  width: 250px;
+}
+
+.d {
+  background: lightblue;
+  width: 100px;
+}
