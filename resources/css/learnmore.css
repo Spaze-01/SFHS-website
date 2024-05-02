@@ -214,7 +214,7 @@ svg {
 
 .third-section-horizontal {
   background: var(--color-2);
-  height: 100vh;
+  height: 200vh;
 }
 
 .third-container-vertical .header-container {
@@ -236,4 +236,47 @@ svg {
   width: 30vw;
   border-bottom: 0.6vh solid whitesmoke;
   margin-top: 2vh;
+}
+
+.third-container-vertical .main-content .first-section-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 5vh;
+}
+
+.third-container-vertical .main-content .first-section-container .first-content {
+  height: 70vh;
+  width: 30vw;
+  background: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 5vh 2vw;
+  border-radius: 2vh;
+  box-shadow: -0.8vw 1.8vh black;
+}
+
+.third-container-vertical .main-content .first-section-container .first-content .inside-header span {
+  color: black;
+  font-weight: 700;
+}
+
+.third-container-vertical .main-content .first-section-container .first-content .location-container {
+  margin: 3vh 0;
+}
+
+.third-container-vertical .main-content .first-section-container .first-content .location-container span {
+  font-size: 3vh;
+}
+
+.location-container span:nth-child(1) {
+  color: var(--color-2);
+  font-weight: 600;
+  text-shadow: -0.1vw 0.1vh var(--color-1);
+}
+
+.location-container span:nth-child(2) {
+  
 }
