@@ -1,50 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --color-1: #102820;
+  --color-2: #006400;
+  --color-3: #4C6444;
+  --color-4: #CABA9C;
+  --color-5: #8A6240;
+  --color-6: #4D2D18;
+}
+
 * {
   margin: 0;
   padding: 0;
-  text-decoration: none;
+  border: none;
 }
 
 body {
   height: 100vh;
-  background: url('/resources/images/1000006456-NiEWqrRAp-transformed.jpeg') no-repeat center center;
-  background-size: cover;
-  font-family: Lato, Arial, sans-serif;
+  background: url('/resources/images/welcome_page_bg.jpeg') no-repeat center center;
+  background-size: 100% auto;
+  font-family: Poppins, Segoe UI, Tahoma, sans-serif;
 }
 
+/* styles for the top section */
 .top-container {
-  background-color: #4C6444;
+  background: var(--color-3);
   padding: 1.6vh 0.8vw 1.6vh 1.4vw;
   border-radius: 0.6vw;
   display: flex;
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 20vh;
-  right: 24.3vw;
+  top: 18vh;
+  right: 19vw;
 }
 
 .top-container .header {
-  color: ghostwhite;
+  color: whitesmoke;
   text-shadow: -0.2vw 0.2vh black;
   font-size: 4.4vh;
   font-weight: 500;
 }
 
 .top-container .sfhs-student-term {
-  background-color: #CABA9C;
-  color: darkgreen;
+  background: var(--color-4);
+  color: var(--color-2);
   font-size: 5vh;
   font-weight: 600;
-  text-shadow: -0.2vw 0.2vh #133A1B;
-  box-shadow: black -0.4vw 0.8vh;
+  text-shadow: -0.2vw 0 var(--color-1);
+  box-shadow: -0.4vw 0.8vh black;
   padding: 0vh 1vw;
+  border: 0.3vh solid black;
   border-radius: 0.4vw;
   margin-left: 1vw;
 }
 
 .middle-container { 
-  background: #102820;
+  background: var(--color-1);
   padding: 1vw;
+  border: 0.3vh solid whitesmoke;
   border-radius: 0.8vw;
   display: inline-block;
   position: absolute;
@@ -52,6 +66,7 @@ body {
   left: 22vw;
 }
 
+/* styles for the middle section */
 .middle-container .top-message {
   margin: 1vh 0 2vh 0vw;
   display: flex;
@@ -82,7 +97,7 @@ body {
   color: #CABA9C;
   font-size: 3.4vh;
   font-weight: 600;
-  text-shadow: -0.2vw 0.1vh darkgreen;
+  text-shadow: -0.1vw 0.1vh darkgreen;
   margin-left: 0.2vw;
 }
 
@@ -95,12 +110,12 @@ body {
 }
 
 .middle-container .quote-container .quote-message-container {
-  margin: 4vh 1vw 2vh 1vw;
+  margin: 3vh 1vw 1vh 1vw;
 }
 
 .middle-container .quote-container .quote-message-container > span {
   text-align: center;
-  font-size: 3.2vh;
+  font-size: 3vh;
   font-weight: 600;
 }
 
@@ -117,16 +132,18 @@ body {
   margin-bottom: 1vh;
 }
 
+/* styles for the bottom section */
 .bottom-container {
   height: 8vh;
   background: #8A6240;
-  padding: 0.6vh 1vw;
+  padding: 0.6vh 8vw;
+  border: 0.5vh solid black;
   border-radius: 0.6vw;
   display: flex;
   align-items: center;
   position: absolute;
-  top: 72vh;
-  left: 22vw;
+  top: 74vh;
+  left: 27vw;
 }
 
 .bottom-container .direction-message {
@@ -141,12 +158,13 @@ body {
   padding: 0.6vh 1vw;
   border: none;
   border-radius: 0.6vw;
-  box-shadow: black -0.4vw 1vh;
+  box-shadow: -0.4vw 0 1.2vh black;
 }
 
 .bottom-container .home-button > a {
-  color: ghostwhite;
+  color: whitesmoke;
   font-size: 3vh;
   font-weight: 700;
   text-shadow: -0.1vw 0 white;
+  text-decoration: none;
 }

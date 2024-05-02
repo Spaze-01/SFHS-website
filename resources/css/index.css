@@ -1,30 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* colors that is used for the whole website */
+:root {
+  --color-1: #102820;
+  --color-2: #006400;
+  --color-3: #4C6444;
+  --color-4: #CABA9C;
+  --color-5: #8A6240;
+  --color-6: #4D2D18;
+}
+
+/* sets all the elements' padding and margin to zero */
 * {
   margin: 0;
   padding: 0;
-  text-decoration: none;
 }
 
-.nav-bar {
-  height: 100px;
+/* font of the website it its back-up fonts */
+body {
+  font-family: Poppins, Segoe UI, Tahoma, sans-serif;
+}
+
+svg {
+  fill: white;
+}
+
+/* styles for the main container of the website */
+#main-container {
   display: flex;
+  flex-direction: column;
 }
 
-.a {
-  background-color: lightpink;
-  width: 100px;
+/* styles for the first section */
+.first-container-horizontal {
+  position: sticky;
+  top: 0;
+  z-index: 8;
 }
 
-.b {
-  background-color: lightblue;
+.first-section-vertical {
+  height: 10vh;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.first-section-vertical span {
+  color: whitesmoke;
+  font-size: 3vh;
+}
+
+.first-section-vertical span > u {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.first-section-vertical span > a {
+  color: var(--color-4);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/* styles for the second second */
+/* this is where the navigation bar styles located */
+.second-section-vertical .nav-bar {
+  height: 12vh;
+  background: var(--color-1);
+  padding: 3vh 0 2vh 0;
+  border-bottom: 0.1vh solid black;
+  box-shadow: 0 0.6vh 2vh var(--color-1);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.second-section-vertical .nav-bar .sfhs-logo-container {
+  width: 8vw;
+}
+
+.second-section-vertical .nav-bar .sfhs-logo-container .sfhs-logo {
+  height: 10vh;
+  margin-left: 1.6vw;
+}
+
+.second-section-vertical .nav-bar .school-name-container {
   flex: 2;
 }
 
-.c {
-  background: lightpink;
-  width: 250px;
+.second-section-vertical .nav-bar .school-name-container > div .first-text {
+  background: var(--color-4);
+  color: var(--color-2);
+  font-size: 3.4vh;
+  font-weight: 700;
+  text-shadow: -0.1vw 0.1vh black;
+  padding: 0.3vh 0.6vw;
+  border: 0.2vh solid black;
+  border-radius: 1vh;
 }
 
-.d {
-  background: lightblue;
-  width: 100px;
+.second-section-vertical .nav-bar .school-name-container > div .second-text {
+  color: whitesmoke;
+  font-size: 3vh;
+  font-weight: 600;
+  margin-left: 4vw;
+}
+
+.second-section-vertical .nav-bar .enroll-btn-container {
+  width: 20vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.second-section-vertical .nav-bar .enroll-btn-container .enroll-btn {
+  background: var(--color-5);
+  padding: 2vh 3vw;
+  border: 0.4vh solid black;
+  border-radius: 2vh;
+  box-shadow: 0.4vw 0 0.8vh black;
+  margin-left: 4vw;
+  margin-bottom: 1vh;
+  transition: 0.35s linear
+}
+
+.second-section-vertical .nav-bar .enroll-btn-container .enroll-btn:hover {
+  background: var(--color-6);
+  border: 0.4vh solid white;
+}
+
+.second-section-vertical .nav-bar .enroll-btn-container .enroll-btn > a {
+  color: whitesmoke;
+  font-size: 3.4vh;
+  font-weight: 700;
+  text-shadow: 0.1vw 0.1vh black;
+  text-decoration: none;
+} 
+
+.second-section-vertical .nav-bar .sidebar-btn-container {
+  width: 8vw;
+}
+
+.second-section-vertical .nav-bar .sidebar-btn-container .sidebar-btn #sidebar-active {
+  display: none;
+}
+
+.second-section-vertical .nav-bar .sidebar-btn-container .sidebar-btn #sidebar-active:checked ~ .links-container {
+  display: flex;
+  right: 0;
+}
+
+.second-section-vertical .nav-bar .sidebar-btn-container .sidebar-btn #sidebar-active:checked ~ #overlay {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+}
+
+.second-section-vertical .nav-bar .sidebar-btn-container .sidebar-btn .links-container {
+  height: 100%;
+  width: 100%;
+  background: var(--color-2);
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  z-index: 10;
+  width: 35vw;
+  box-shadow: -0.4vw 0 0.6vh rgba(0,0,0,0.25);
+  transition: 0.65s ease-out;
+}
+
+.second-section-vertical .nav-bar .sidebar-btn-container .sidebar-btn .links-container a {
+  height: auto;
+  width: 100%;
+  color: whitesmoke;
+  font-size: 2.4vh;
+  font-weight: 500;
+  box-sizing: border-box;
+  padding: 3vh 2vw;
+  transition: 0.35s ease-out;
+  text-decoration: none;
+}
+
+.second-section-vertical .nav-bar .sidebar-btn-container .sidebar-btn .links-container a:hover {
+  background: var(--color-1);
+  font-weight: 600;
+}
+
+.second-section-vertical .nav-bar .sidebar-btn-container .sidebar-btn .links-container .close-sidebar-btn .sidebar-image {
+  height: 50vh;
+  width: 100%;
+}
+
+.second-section-vertical .nav-bar .sidebar-btn-container .sidebar-btn .links-container .close-sidebar-btn .inside-sidebar-container > svg {
+  position: absolute;
+  top: 4vh;
+  left: 0vw;
+}
+
+.second-section-vertical .nav-bar .sidebar-btn-container .sidebar-btn .links-container .close-sidebar-btn .inside-sidebar-container > span {
+  color: whitesmoke;
+  font-size: 7vh;
+  font-weight: 700;
+  text-shadow: 0.2vw 0.1vh black;
+  position: absolute;
+  top: 39vh;
+  right: 2vw;
+}
+
+/* styles for the third section */
+.third-section-vertical {
+  background: url('/resources/images/sfhs.jpg');
+  background-size: 100% 100%
+}
+
+.third-section-vertical > div {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.third-section-vertical .sfhs-logo-gif-container {
+  margin-top: 10vh;
+  display: flex;
+  justify-content: center;
+}
+
+.third-section-vertical .sfhs-logo-gif-container img {
+  height: 28vh;
+}
+
+.third-section-vertical .content-container {
+  margin-top: 6vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.third-section-vertical .content-container .heading {
+  color: whitesmoke;
+  font-size: 4.8vh;
+  font-weight: 700;
+  text-shadow: -0.2vw 0.1vh var(--color-1);
+  display: inline-block;
+}
+
+.third-section-vertical .content-container .after-heading {
+  background: whitesmoke;
+  color: black;
+  text-align: center;
+  font-size: 2.4vh;
+  font-weight: 600;
+  padding: 2.6vh 3vw;
+  margin-top: 2vh;
+  border: 0.4vh solid black;
+  border-radius: 2vh;
+  box-shadow: 0.5vw 1vh black;
+  width: 46vw;
+}
+
+.third-section-vertical .content-container span > .sfhs {
+  color: var(--color-1);
+  font-size: 3.6vh;
+  text-decoration: underline;
+  text-shadow: -0.2vw 0.1vh var(--color-2);
+}
+
+.third-section-vertical .content-container .btn-container {
+  width: 30vw;
+  margin-top: 4vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.third-section-vertical .content-container .btn-container button {
+  background: var(--color-2);
+  padding: 2vh 3vw;
+  border: 0.3vh solid black;
+  border-radius: 1.6vh;
+  box-shadow: 0.5vw 1.4vh black;
+  transition: 0.35s linear;
+}
+
+.third-section-vertical .content-container .btn-container button:hover {
+  background: var(--color-5);
+  border: 0.3vh solid whitesmoke;
+}
+
+.third-section-vertical .content-container .btn-container button > a {
+  color: whitesmoke;
+  font-size: 3vh;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* styles for the fourth section */
+.fourth-section-vertical {
+  height: 15vh;
+  background: black;
+  display: flex;
+  align-items: center;
+}
+
+.fourth-section-vertical img {
+  height: 4vh;
+  margin: 0 2vw;
+}
+
+.fourth-section-vertical div {
+  width: 90vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fourth-section-vertical div span {
+  color: whitesmoke;
+  font-size: 2.4vh;
+  font-weight: 500;
 }
