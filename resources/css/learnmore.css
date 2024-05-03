@@ -163,7 +163,7 @@ svg {
 .second-section-vertical .nav-bar .sidebar-btn-container .sidebar-btn .links-container {
   height: 100%;
   width: 100%;
-  background: var(--color-2);
+  background: #04471C;
   flex-direction: column;
   position: fixed;
   top: 0;
@@ -179,7 +179,7 @@ svg {
   width: 100%;
   color: whitesmoke;
   font-size: 2.4vh;
-  font-weight: 500;
+  font-weight: 600;
   box-sizing: border-box;
   padding: 3vh 2vw;
   transition: 0.35s ease-out;
@@ -212,9 +212,11 @@ svg {
   right: 2vw;
 }
 
+/* styles for the third section */
+/* this is where the styles of the main content located */
 .third-section-horizontal {
   background: var(--color-2);
-  height: 400vh;
+  height: 380vh;
 }
 
 .third-container-vertical .header-container {
@@ -267,6 +269,7 @@ svg {
   font-weight: 700;
   text-shadow: -0.1vw 0.1vh var(--color-1);
   padding: 1.6vh 3vw;
+  border: 0.2vh solid black;
   border-radius: 2vh;
   box-shadow: -0.2vw 0 0.2vh var(--color-1);
 }
@@ -324,13 +327,13 @@ svg {
   height: 80vh;
   width: 50vw;
   text-align: center;
-  padding: 5vh 2vw;
+  padding: 8vh 2vw;
   border: 0.6vh solid black;
   border-radius: 2vh;
 }
 
 .third-container-vertical .main-content .second-section-container .third-content .inside-header {
-  margin: 2vh 0;
+  margin-bottom: 2vh;
 }
 
 .third-container-vertical .main-content .second-section-container .third-content .inside-header span {
@@ -362,3 +365,69 @@ svg {
   font-weight: 700;
 }
 
+.third-container-vertical .main-content .third-section-container {
+  margin-top: 18vh;
+}
+
+.third-container-vertical .main-content .third-section-container .fourth-content {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.third-container-vertical .main-content .third-section-container .fourth-content .inside-header {
+  margin-bottom: 8vh;
+}
+
+.third-container-vertical .main-content .third-section-container .fourth-content .inside-header span {
+  background: var(--color-5);
+  color: whitesmoke;
+  font-size: 5vh;
+  font-weight: 600;
+  text-shadow: -0.2vw 0.1vh var(--color-1);
+  padding: 3vh 4vw;
+  border: 0.4vh solid black;
+  border-radius: 1.4vh;
+  box-shadow: -0.2vw 0 0.8vh black;
+}
+
+.third-container-vertical .main-content .third-section-container .fourth-content .sfhs-hymn-container {
+  background: var(--color-4);
+  height: 80vh;
+  width: 60vw;
+  padding: 2vw 4vh;
+  border: 0.6vh solid black;
+  border-radius: 2vh;
+  box-shadow: 0.8vw 3vh black;
+}
+
+/* styles for the fourth section */
+.fourth-section-vertical {
+  height: 15vh;
+  background: black;
+  display: flex;
+  align-items: center;
+}
+
+.fourth-section-vertical img {
+  height: 4vh;
+  margin: 0 2vw;
+}
+
+.fourth-section-vertical div {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fourth-section-vertical div span {
+  color: whitesmoke;
+  font-size: 2.4vh;
+  font-weight: 500;
+}
+
+.fourth-section-vertical div span:nth-child(2) {
+  margin-right: 2.6vw;
+}
