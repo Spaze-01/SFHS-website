@@ -214,7 +214,7 @@ svg {
 
 .third-section-horizontal {
   background: var(--color-2);
-  height: 200vh;
+  height: 400vh;
 }
 
 .third-container-vertical .header-container {
@@ -240,31 +240,40 @@ svg {
 
 .third-container-vertical .main-content .first-section-container {
   display: flex;
+  align-items: center;
   justify-content: center;
-  margin-top: 5vh;
+  margin-top: 15vh;
 }
 
 .third-container-vertical .main-content .first-section-container .first-content {
-  height: 70vh;
+  height: 76vh;
   width: 30vw;
-  background: whitesmoke;
+  background: var(--color-4);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   padding: 5vh 2vw;
+  border: 0.4vh solid black;
   border-radius: 2vh;
   box-shadow: -0.8vw 1.8vh black;
 }
 
 .third-container-vertical .main-content .first-section-container .first-content .inside-header span {
-  color: black;
+  background: var(--color-5);
+  color: whitesmoke;
+  font-size: 4vh;
   font-weight: 700;
+  text-shadow: -0.1vw 0.1vh var(--color-1);
+  padding: 1.6vh 3vw;
+  border-radius: 2vh;
+  box-shadow: -0.2vw 0 0.2vh var(--color-1);
 }
 
 .third-container-vertical .main-content .first-section-container .first-content .location-container {
-  margin: 3vh 0;
+  margin-top: 3vh;
+  margin-bottom: 2vh;
 }
 
 .third-container-vertical .main-content .first-section-container .first-content .location-container span {
@@ -278,5 +287,78 @@ svg {
 }
 
 .location-container span:nth-child(2) {
-  
+  color: black;
+  font-weight: 500;
 }
+
+.location-container span:nth-child(3) {
+  color: var(--color-5);
+  font-weight: 500;
+  text-shadow: -0.1vw 0.1vh var(--color-1);
+}
+
+.third-container-vertical .main-content .first-section-container .first-content .credits-container {
+  margin-top: 1vh;
+}
+
+.credits-container span {
+  font-size: 2vh;
+  font-weight: 500;
+}
+
+.third-container-vertical .main-content .first-section-container .second-content {
+  height: 60vh;
+  width: 30vw;
+  margin-left: 5vw;
+}
+
+.third-container-vertical .main-content .second-section-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12vh;
+}
+
+.third-container-vertical .main-content .second-section-container .third-content {
+  background: whitesmoke;
+  height: 80vh;
+  width: 50vw;
+  text-align: center;
+  padding: 5vh 2vw;
+  border: 0.6vh solid black;
+  border-radius: 2vh;
+}
+
+.third-container-vertical .main-content .second-section-container .third-content .inside-header {
+  margin: 2vh 0;
+}
+
+.third-container-vertical .main-content .second-section-container .third-content .inside-header span {
+  color: black;
+  font-size: 5vh;
+  font-weight: 700;
+  text-shadow: -0.1vw 0.1vh var(--color-1);
+}
+
+.third-container-vertical .main-content .second-section-container .third-content .history-container {
+  background: var(--color-1);
+  padding: 4vh 2vw;
+  border-radius: 2vh;
+}
+
+.third-container-vertical .main-content .second-section-container .third-content .history-container span {
+  color: whitesmoke;
+  font-size: 3vh;
+}
+
+.third-container-vertical .main-content .second-section-container .third-content .full-info {
+  margin-top: 1vh;
+  text-align: right;
+}
+
+.third-container-vertical .main-content .second-section-container .third-content .full-info a {
+  color: var(--color-1);
+  font-size: 2.8vh;
+  font-weight: 700;
+}
+

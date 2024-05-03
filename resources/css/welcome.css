@@ -74,16 +74,14 @@ body {
 }
 
 .middle-container .top-message .sfhs-logo {
-  height: 8vh;
-  margin-left: 0.4vw;
-  margin-bottom: 1vh;
+  height: 12vh;
 }
 
 .middle-container .top-message .divider-text {
   font-size: 5vh;
   font-weight: 300;
-  margin-left: 7vw;
-  margin-right: 1.8vw;
+  margin-left: 3.6vw;
+  margin-right: 3.4vw;
 }
 
 .middle-container .top-message > span {
@@ -142,7 +140,7 @@ body {
   display: flex;
   align-items: center;
   position: absolute;
-  top: 74vh;
+  top: 78vh;
   left: 27vw;
 }
 
