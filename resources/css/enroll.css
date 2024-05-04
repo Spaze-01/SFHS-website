@@ -181,11 +181,12 @@ body {
 
 .third-section-vertical .second-section form .submit-btn {
   height: 10vh;
+  width: 100%;
   background: var(--color-2);
   color: whitesmoke;
   font-size: 3.6vh;
   font-weight: 700;
-  text-shadow: -0.2vw 0.1vh var(--color-1);
+  text-shadow: 0.2vw 0.1vh var(--color-1);
   margin-top: 8vh;
   border: 0.2vh solid black;
 }
