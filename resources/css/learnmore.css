@@ -116,6 +116,11 @@ svg {
 
 .second-section-vertical .nav-bar .enroll-btn-container .enroll-btn {
   background: var(--color-5);
+  color: whitesmoke;
+  font-size: 3.4vh;
+  font-weight: 700;
+  text-shadow: 0.1vw 0.1vh black;
+  text-decoration: none;
   padding: 2vh 3vw;
   border: 0.4vh solid black;
   border-radius: 2vh;
@@ -126,17 +131,8 @@ svg {
 }
 
 .second-section-vertical .nav-bar .enroll-btn-container .enroll-btn:hover {
-  background: var(--color-6);
-  border: 0.4vh solid white;
+  border: 0.4vh solid whitesmoke;
 }
-
-.second-section-vertical .nav-bar .enroll-btn-container .enroll-btn > a {
-  color: whitesmoke;
-  font-size: 3.4vh;
-  font-weight: 700;
-  text-shadow: 0.1vw 0.1vh black;
-  text-decoration: none;
-} 
 
 .second-section-vertical .nav-bar .sidebar-btn-container {
   width: 8vw;

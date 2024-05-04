@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* colors that is used for the whole website */
+:root {
+  --color-1: #102820;
+  --color-2: #006400;
+  --color-3: #4C6444;
+  --color-4: #CABA9C;
+  --color-5: #8A6240;
+  --color-6: #4D2D18;
+}
+
+/* sets all the elements' padding and margin to zero */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+/* font of the website it its back-up fonts */
+body {
+  font-family: Poppins, Segoe UI, Tahoma, sans-serif;
+}
+
+/* styles for the main container of the website */
+#main-container {
+  height: 300vh;
+  background: var(--color-2);
+  display: flex;
+  flex-direction: column;
+}
+
+.first-container-horizontal {
+  height: 20vh;
+  display: flex;
+}
+
+.first-section-vertical {
+  margin: 4vh 0 0 3vw;
+}
+
+.first-section-vertical a svg {
+  fill: whitesmoke;
+  height: 6vh;
+  margin-bottom: -2vh;
+}
+
+.first-section-vertical a span {
+  color: whitesmoke;
+  font-size: 3vh;
+  font-weight: 600;
+  margin-left: 1vw;
+}
+
+.second-container-horizontal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 5vh;
+}
+
+.second-section-vertical span {
+  color: whitesmoke;
+  font-size: 8vh;
+  font-weight: 700;
+  text-shadow: -0.3vw 0.1vh var(--color-1);
+}
+
+.second-section-vertical hr {
+  width: 40vw;
+  border-bottom: 0.6vh solid whitesmoke;
+  margin-top: 2vh;
+}
+
+.third-container-horizontal {
+  display: flex;
+  justify-content: center;
+}
+
+.third-section-vertical {
+  margin-top: 20vh;
+  height: 95vw;
+  width: 65vw;
+  background: var(--color-4);
+  border: 0.4vh solid black;
+  border-radius: 3vh;
+  box-shadow: 1vw 3vh black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.third-section-vertical .first-section {
+  height: 30vh;
+  display: flex;
+  align-items: center;
+}
+
+.third-section-vertical .first-section span {
+  background: var(--color-5);
+  color: whitesmoke;
+  font-size: 5vh;
+  font-weight: 600;
+  text-shadow: -0.2vw 0.1vh var(--color-1);
+  padding: 2vh 2vw;
+  border: 0.3vh solid black;
+  border-radius: 1.4vh;
+  box-shadow: 0.6vw 1.6vh black;
+}
+
+.third-section-vertical .second-section {
+  width: 55vw;
+  margin-top: -4vh;
+}
+
+.third-section-vertical .second-section form {
+  display: flex;
+  flex-direction: column;
+}
+
+.third-section-vertical .second-section form label {
+  font-size: 3.6vh;
+  font-weight: 600;
+  margin: 6vh 0 1vh 0.2vw;
+}
+
+.third-section-vertical .second-section form input {
+  height: 10vh;
+  background: ghostwhite;
+  border: 0.1vh solid lightgray;
+  border-radius: 0.8vh;
+  padding-left: 1vw;
+}
+
+.third-section-vertical .second-section form input::placeholder {
+  color: darkgreen;
+  font-size: 3vh;
+  font-weight: 600;
+  opacity: 0.6;
+}
+
+.third-section-vertical .second-section form div {
+  display: flex;
+  flex-direction: row;
+}
+
+.third-section-vertical .second-section form div input:nth-child(1) {
+  flex: 1;
+}
+
+.third-section-vertical .second-section form div input:nth-child(2) {
+  flex: 1;
+}
+
+.third-section-vertical .second-section form .current-address {
+  height: 22vh;
+}
+
+.third-section-vertical .second-section form .checkbox-container {
+  height: 20vh;
+  background: lightgray;
+  margin-top: 3vh;
+  border: 0.2vh solid black;
+  display: flex;
+  justify-content: center;
+}
+
+.third-section-vertical .second-section form .checkbox-container > input {
+  height: 3vh;
+  margin: 2.6vh 1vw 0 1.6vw;
+}
+
+.third-section-vertical .second-section form .checkbox-container span {
+  font-size: 2.5vh;
+  font-weight: 500;
+  margin-top: 2vh;
+  margin-right: 1vw;
+}
+
+.third-section-vertical .second-section form .submit-btn {
+  height: 10vh;
+  background: var(--color-2);
+  color: whitesmoke;
+  font-size: 3.6vh;
+  font-weight: 700;
+  text-shadow: -0.2vw 0.1vh var(--color-1);
+  margin-top: 8vh;
+  border: 0.2vh solid black;
+}
