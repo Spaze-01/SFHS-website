@@ -244,7 +244,7 @@ svg {
 }
 
 .third-container-vertical .main-content .first-section-container .first-content {
-  height: 76vh;
+  height: 78vh;
   width: 30vw;
   background: var(--color-4);
   display: flex;
@@ -320,7 +320,7 @@ svg {
 
 .third-container-vertical .main-content .second-section-container .third-content {
   background: whitesmoke;
-  height: 80vh;
+  height: 85vh;
   width: 50vw;
   text-align: center;
   padding: 8vh 2vw;
