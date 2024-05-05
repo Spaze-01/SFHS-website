@@ -84,7 +84,7 @@ body {
   height: 95vw;
   width: 65vw;
   background: var(--color-4);
-  border: 0.4vh solid black;
+  border: 0.4vh solid var(--color-6);
   border-radius: 3vh;
   box-shadow: 1vw 3vh black;
   display: flex;

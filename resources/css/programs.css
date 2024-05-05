@@ -175,7 +175,7 @@ svg {
   width: 100%;
   color: whitesmoke;
   font-size: 2.4vh;
-  font-weight: 500;
+  font-weight: 600;
   box-sizing: border-box;
   padding: 3vh 2vw;
   transition: 0.35s ease-out;
@@ -208,89 +208,121 @@ svg {
   right: 2vw;
 }
 
+.return-container {
+  background: var(--color-2);
+  height: 20vh;
+  display: flex;
+}
+
+.return {
+  margin: 4vh 0 0 3vw;
+}
+
+.return a svg {
+  fill: whitesmoke;
+  height: 6vh;
+  margin-bottom: -2vh;
+}
+
+.return a span {
+  color: whitesmoke;
+  font-size: 3vh;
+  font-weight: 600;
+  margin-left: 1vw;
+}
+
 /* styles for the third section */
-.third-section-vertical {
-  background: url('/resources/images/sfhs.jpg');
-  background-size: 100% 100%
+/* this is where the styles of the main content located */
+.third-section-horizontal {
+  background: var(--color-2);
 }
 
-.third-section-vertical > div {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-.third-section-vertical .sfhs-logo-gif-container {
+.third-container-vertical .header-container {
   margin-top: 10vh;
-  display: flex;
-  justify-content: center;
-}
-
-.third-section-vertical .sfhs-logo-gif-container img {
-  height: 28vh;
-}
-
-.third-section-vertical .content-container {
-  margin-top: 6vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.third-section-vertical .content-container .heading {
+.third-container-vertical .header-container span {
   color: whitesmoke;
-  font-size: 4.8vh;
+  font-size: 8vh;
   font-weight: 700;
-  text-shadow: -0.2vw 0.1vh var(--color-1);
-  display: inline-block;
+  text-shadow: -0.3vw 0.1vh var(--color-1);
 }
 
-.third-section-vertical .content-container .after-heading {
-  background: whitesmoke;
-  color: black;
-  text-align: center;
-  font-size: 2.4vh;
-  font-weight: 600;
-  padding: 2.6vh 3vw;
-  margin-top: 2vh;
-  border: 0.4vh solid black;
-  border-radius: 2vh;
-  box-shadow: 0.5vw 1vh black;
-  width: 46vw;
-}
-
-.third-section-vertical .content-container span > .sfhs {
-  color: var(--color-1);
-  font-size: 3.6vh;
-  text-shadow: -0.1vw 0.1vh var(--color-2);
-}
-
-.third-section-vertical .content-container .btn-container {
+.third-container-vertical .header-container hr {
   width: 30vw;
-  margin-top: 4vh;
+  border-bottom: 0.6vh solid whitesmoke;
+  margin-top: 2vh;
+  margin-bottom: 20vh;
+}
+
+.third-container-vertical .main-content {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
 }
 
-.third-section-vertical .content-container .btn-container button {
-  background: var(--color-2);
-  padding: 2vh 3vw;
-  border: 0.3vh solid black;
-  border-radius: 1.6vh;
-  box-shadow: 0.5vw 1.4vh black;
-  transition: 0.35s linear;
-}
-
-.third-section-vertical .content-container .btn-container button:hover {
-  border: 0.3vh solid whitesmoke;
-}
-
-.third-section-vertical .content-container .btn-container button {
+.third-container-vertical .main-content span {
+  width: 66%;
   color: whitesmoke;
+  font-size: 5vh;
+  font-weight: 600;
+  text-shadow: -0.2vw 0.1vh var(--color-1);
+  text-align: left;
+  margin-bottom: 2vh;
+}
+
+.third-container-vertical .main-content .styled-table {
+  border-collapse: collapse;
+  margin: 1vh 0 20vh 0;
+  font-size: 2.6vh;
+  width: 70vw;
+  box-shadow: 0 0 2vh rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+  height: 14vh;
+  background: var(--color-5);
+  color: whitesmoke;
+  text-align: left; 
+}
+
+.styled-table th {
   font-size: 3vh;
   font-weight: 700;
-  text-decoration: none;
+  padding: 2vh 1.8vw;
+}
+
+.styled-table td {
+  font-size: 2.6vh;
+  font-weight: 500;
+  padding: 2.4vh 2.4vw;
+  border: 0.2vh solid dimgray;
+}
+
+.styled-table tr td:last-of-type {
+  font-size: 3vh;
+  font-weight: 700;
+}
+
+.styled-table #full {
+  color: darkred;
+}
+
+.styled-table #available {
+  color: var(--color-2);
+}
+
+.styled-table #almost-full {
+  color: #e47200;
+}
+
+.styled-table tbody tr {
+  background: var(--color-4);
 }
 
 /* styles for the fourth section */

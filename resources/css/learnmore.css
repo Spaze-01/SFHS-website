@@ -208,6 +208,29 @@ svg {
   right: 2vw;
 }
 
+.return-container {
+  background: var(--color-2);
+  height: 20vh;
+  display: flex;
+}
+
+.return {
+  margin: 4vh 0 0 3vw;
+}
+
+.return a svg {
+  fill: whitesmoke;
+  height: 6vh;
+  margin-bottom: -2vh;
+}
+
+.return a span {
+  color: whitesmoke;
+  font-size: 3vh;
+  font-weight: 600;
+  margin-left: 1vw;
+}
+
 /* styles for the third section */
 /* this is where the styles of the main content located */
 .third-section-horizontal {
@@ -265,9 +288,9 @@ svg {
   font-weight: 700;
   text-shadow: -0.1vw 0.1vh var(--color-1);
   padding: 1.6vh 3vw;
-  border: 0.2vh solid black;
+  border: 0.4vh solid var(--color-6);
   border-radius: 2vh;
-  box-shadow: -0.2vw 0 0.2vh var(--color-1);
+  box-shadow: -0.2vw 0.2vh var(--color-1);
 }
 
 .third-container-vertical .main-content .first-section-container .first-content .location-container {
@@ -386,7 +409,7 @@ svg {
   padding: 3vh 4vw;
   border: 0.4vh solid black;
   border-radius: 1.4vh;
-  box-shadow: -0.2vw 0 0.8vh black;
+  box-shadow: 0 0 2vh black;
 }
 
 .third-container-vertical .main-content .third-section-container .fourth-content .sfhs-hymn-container {
