@@ -1,66 +1,80 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SFHS — Enroll</title>
-    <link rel="stylesheet" href="/resources/css/enroll.css"
-    <link rel="icon" type="image/x-icon" href="/resources/images/favicon/sfhs_logo.png">
-  </head>
-  <body>
-    <div class="main-container" id="main-container">
-      <div class="first-container-horizontal">
-        <div class="first-section-vertical">
-          <a href="/index.html">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M360-240 120-480l240-240 56 56-144 144h488v-160h80v240H272l144 144-56 56Z"/></svg>
-            <span>Return to Homepage?</span>
-          </a>
-        </div>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SFHS — Enroll</title>
+  <link rel="stylesheet" href="/resources/css/enroll.css">
+  <link rel="stylesheet" href="/resources/css/popup.css">
+  <link rel="icon" type="image/x-icon" href="/resources/images/favicon/sfhs_logo.png">
+</head>
+
+<body>
+  <div class="popup-container">
+    <div class="popup">
+      <button id="close-btn">&times;</button>
+      <span>Reminder!</span>
+      <span>You can <b>ONLY</b> submit (<b>1</b>) application, make sure to double or triple check your information before clicking the 'Submit' button below.</span>
+    </div>
+  </div>
+  <div class="main-container" id="main-container">
+    <div class="first-container-horizontal">
+      <div class="first-section-vertical">
+        <a href="/index.html">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+            <path d="M360-240 120-480l240-240 56 56-144 144h488v-160h80v240H272l144 144-56 56Z" />
+          </svg>
+          <span>Return to Homepage?</span>
+        </a>
       </div>
-      <div class="second-container-horizontal">
-        <div class="second-section-vertical">
-          <span>Enrollment Form</span>
-           <hr>
-        </div>
+    </div>
+    <div class="second-container-horizontal">
+      <div class="second-section-vertical">
+        <span>Enrollment Form</span>
+        <hr>
       </div>
-      <div class="third-container-horizontal">
-        <div class="third-section-vertical">
-          <div class="first-section">
-            <span>Student' s Information</span>
-          </div>
-          <div class="second-section">
-            <form action="" method="POST">
-              <label>Basic Information</label>
-              <div>
-                <input type="text" placeholder="First Name" required>
-                <input type="text" placeholder="Last Name" required>
-              </div>
-              <input type="number" placeholder="Date of Birth (MM/DD/YY)">
-              <label>Contact Information</label>
-              <div>
-                <input type="text" placeholder="Parent/Guardian's Full Name" required>
-                <input type="number" placeholder="Phone Number" required>
-              </div>
-              <input type="text" placeholder="Relationship with the student" required>
-              <input type="email" placeholder="Email address" required>
-              <label>Home Address</label>
-              <input class="current-address" type="textarea" placeholder="Street address, City, State, Zip code" required>
-              <label>Academic Information</label>
-              <div>
-                <input type="text" placeholder="Current Grade Level" required>
-                <input type="text" placeholder="Grade Level Applying For">
-              </div>
-              <input type="text" placeholder="Previous School Attended" required>
-              <div class="checkbox-container">
-                <input type="checkbox" required>
-                <span>Please note that by clicking the 'Submit' button below, you are confirming that all information entered in this enrollment form is complete and truthful to the best of your knowledge. Providing false or misleading information may affect your application's processing.</span>
-              </div>
-              <input class="submit-btn" type="submit">
-            </form>
-          </div>
+    </div>
+    <div class="third-container-horizontal">
+      <div class="third-section-vertical">
+        <div class="first-section">
+          <span>Student' s Information</span>
+        </div>
+        <div class="second-section">
+          <form action="/resources/user-interaction/confirm.html" method="POST">
+            <label>Basic Information</label>
+            <div>
+              <input type="text" placeholder="First Name" required>
+              <input type="text" placeholder="Last Name" required>
+            </div>
+            <input type="text" id="birthday" name="birthday" maxlength="10" onkeyup="formatBirthday(this)" placeholder="Date of Birth (MM/DD/YYYY)" required>
+            <label>Contact Information</label>
+            <div>
+              <input type="text" placeholder="Parent/Guardian's Full Name" required>
+              <input id="phone-number" type="number" placeholder="Phone Number" maxlength="11" required>
+            </div>
+            <input type="text" placeholder="Relationship with the student" required>
+            <input type="email" placeholder="Email address" required>
+            <label>Home Address</label>
+            <input class="current-address" type="textarea" placeholder="Street address, City, State, Zip code" required>
+            <label>Academic Information</label>
+            <div>
+              <input class="number-input" type="number" maxlength="2" placeholder="Current grade level" required>
+              <input class="number-input" type="number" maxlength="2" placeholder="Grade level applying for" required>
+            </div>
+            <input type="text" placeholder="Previous School Attended" required>
+            <div class="checkbox-container">
+              <input type="checkbox" required>
+              <span>Please note that by clicking the 'Submit' button below, you are confirming that all information entered in this enrollment form is complete and truthful to the best of your knowledge. Providing false or misleading information may affect your application's processing.</span>
+            </div>
+            <input class="submit-btn" type="submit">
+          </form>
         </div>
       </div>
     </div>
-  </body>
+  </div>
+  <script src="/scripts/enroll.js"></script>
+</body>
+
 </html>

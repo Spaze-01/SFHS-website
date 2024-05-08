@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* colors that is used for the whole website */
+:root {
+  --color-1: #102820;
+  --color-2: #006400;
+  --color-3: #4C6444;
+  --color-4: #CABA9C;
+  --color-5: #8A6240;
+  --color-6: #4D2D18;
+}
+
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.popup-container {
+  background: rgba(0,0,0,0.35);
+  height: 514vh;
+  width: 100%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  display: none;
+  z-index: 1;
+}
+
+.popup {
+  background: whitesmoke;
+  width: 28.125em;
+  padding: 3vh 4vw;
+  position: absolute;
+  transform: translate(-50%, 80%);
+  left: 50%;
+  top: 50%;
+  border-radius: 2vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.popup #close-btn {
+  margin: 0 0 2vh 100%;
+  background: transparent;
+  font-size: 6vh;
+  font-weight: 700;
+  color: #c5c5c5;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+
+.popup span:nth-child(2) {
+  font-size: 4vh;
+  font-weight: 700;
+}
+
+.popup span:nth-child(3) {
+  font-size: 3vh;
+  font-weight: 400;
+  text-align: justify;
+  margin: 3vh 0;
+}
