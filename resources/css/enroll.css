@@ -128,13 +128,13 @@ body {
 
 .third-section-vertical .second-section form input {
   height: 10vh;
-  background: ghostwhite;
+  background: whitesmoke;
   border: 0.1vh solid lightgray;
   border-radius: 0.8vh;
   padding-left: 1vw;
 }
 
-.third-section-vertical .second-section form input::placeholder {
+.third-section-vertical .second-section form ::placeholder {
   color: darkgreen;
   font-size: 3vh;
   font-weight: 600;
@@ -156,6 +156,7 @@ body {
 
 .third-section-vertical .second-section form .current-address {
   height: 22vh;
+  padding: 1vw 0 0 1vw;
 }
 
 .third-section-vertical .second-section form .checkbox-container {
@@ -167,7 +168,7 @@ body {
   justify-content: center;
 }
 
-.third-section-vertical .second-section form .checkbox-container > input {
+.third-section-vertical .second-section form .checkbox-container>input {
   height: 3vh;
   margin: 2.6vh 1vw 0 1.6vw;
 }

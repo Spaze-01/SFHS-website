@@ -66,15 +66,15 @@ for (var i = 0; i < numberInputs.length; i++) {
 
 
 // Sets the time delay for the popup
-window.addEventListener("load", function(){
+window.addEventListener("load", function() {
   setTimeout(
-    function open(event){
+    function open(event) {
       document.querySelector(".popup-container").style.display = "block";
     },
     1800
   )
 });
 
-document.querySelector("#close-btn").addEventListener("click", function(){
+document.querySelector("#close-btn").addEventListener("click", function() {
   document.querySelector(".popup-container").style.display = "none";
 });

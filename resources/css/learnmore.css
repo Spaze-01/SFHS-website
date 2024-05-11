@@ -51,12 +51,12 @@ svg {
   font-size: 3vh;
 }
 
-.first-section-vertical span > u {
+.first-section-vertical span>u {
   font-weight: 700;
   text-decoration: underline;
 }
 
-.first-section-vertical span > a {
+.first-section-vertical span>a {
   color: var(--color-4);
   font-weight: 600;
   text-decoration: underline;
@@ -89,7 +89,7 @@ svg {
   flex: 2;
 }
 
-.second-section-vertical .nav-bar .school-name-container > div .first-text {
+.second-section-vertical .nav-bar .school-name-container>div .first-text {
   background: var(--color-4);
   color: var(--color-2);
   font-size: 3.4vh;
@@ -100,7 +100,7 @@ svg {
   border-radius: 1vh;
 }
 
-.second-section-vertical .nav-bar .school-name-container > div .second-text {
+.second-section-vertical .nav-bar .school-name-container>div .second-text {
   color: whitesmoke;
   font-size: 3vh;
   font-weight: 600;
@@ -142,12 +142,12 @@ svg {
   display: none;
 }
 
-.second-section-vertical .nav-bar .sidebar-btn-container .sidebar-btn #sidebar-active:checked ~ .links-container {
+.second-section-vertical .nav-bar .sidebar-btn-container .sidebar-btn #sidebar-active:checked~.links-container {
   display: flex;
   right: 0;
 }
 
-.second-section-vertical .nav-bar .sidebar-btn-container .sidebar-btn #sidebar-active:checked ~ #overlay {
+.second-section-vertical .nav-bar .sidebar-btn-container .sidebar-btn #sidebar-active:checked~#overlay {
   height: 100%;
   width: 100%;
   position: fixed;
@@ -166,7 +166,7 @@ svg {
   right: -100%;
   z-index: 10;
   width: 35vw;
-  box-shadow: -0.4vw 0 0.6vh rgba(0,0,0,0.25);
+  box-shadow: -0.4vw 0 0.6vh rgba(0, 0, 0, 0.25);
   transition: 0.65s ease-out;
 }
 
@@ -192,13 +192,13 @@ svg {
   width: 100%;
 }
 
-.second-section-vertical .nav-bar .sidebar-btn-container .sidebar-btn .links-container .close-sidebar-btn .inside-sidebar-container > svg {
+.second-section-vertical .nav-bar .sidebar-btn-container .sidebar-btn .links-container .close-sidebar-btn .inside-sidebar-container>svg {
   position: absolute;
   top: 4vh;
   left: 0vw;
 }
 
-.second-section-vertical .nav-bar .sidebar-btn-container .sidebar-btn .links-container .close-sidebar-btn .inside-sidebar-container > span {
+.second-section-vertical .nav-bar .sidebar-btn-container .sidebar-btn .links-container .close-sidebar-btn .inside-sidebar-container>span {
   color: whitesmoke;
   font-size: 7vh;
   font-weight: 700;
@@ -216,6 +216,10 @@ svg {
 
 .return {
   margin: 4vh 0 0 3vw;
+}
+
+.return a {
+  text-decoration: none;
 }
 
 .return a svg {

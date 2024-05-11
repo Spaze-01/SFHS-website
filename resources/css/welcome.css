@@ -55,7 +55,7 @@ body {
   margin-left: 1vw;
 }
 
-.middle-container { 
+.middle-container {
   background: var(--color-1);
   padding: 1vw;
   border: 0.3vh solid whitesmoke;
@@ -84,7 +84,7 @@ body {
   margin-right: 3.4vw;
 }
 
-.middle-container .top-message > span {
+.middle-container .top-message>span {
   color: white;
   font-size: 3vh;
   font-weight: 300;
@@ -111,7 +111,7 @@ body {
   margin: 3vh 1vw 1vh 1vw;
 }
 
-.middle-container .quote-container .quote-message-container > span {
+.middle-container .quote-container .quote-message-container>span {
   text-align: center;
   font-size: 3vh;
   font-weight: 600;
@@ -145,7 +145,7 @@ body {
 }
 
 .bottom-container .direction-message {
-  color: white; 
+  color: white;
   font-size: 2.8vh;
   font-weight: 500;
   margin-right: 1vw;
@@ -159,7 +159,7 @@ body {
   box-shadow: -0.4vw 0 1.2vh black;
 }
 
-.bottom-container .home-button > a {
+.bottom-container .home-button>a {
   color: whitesmoke;
   font-size: 3vh;
   font-weight: 700;
